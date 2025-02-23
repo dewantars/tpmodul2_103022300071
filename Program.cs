@@ -5,9 +5,8 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello, World!");
         Console.Write("Masukkan satu huruf: ");
-        char input = Char.ToUpper(Console.ReadKey().KeyChar);
+        char input = Console.ReadKey().KeyChar;
         Console.WriteLine();
 
         if (input == 'A' || input == 'I' || input == 'U' || input == 'E' || input == 'O')
@@ -17,6 +16,13 @@ class Program
         else
         {
             Console.WriteLine($"Huruf {input} merupakan huruf konsonan");
+        }
+
+        int[] bilanganGenap = { 2, 4, 6, 8, 10 };
+
+        for (int i = 0; i < bilanganGenap.Length; i++)
+        {
+            Console.WriteLine($"Angka genap {i + 1} : {bilanganGenap[i]}");
         }
     }
 }
